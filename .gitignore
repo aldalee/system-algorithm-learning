@@ -1,0 +1,7 @@
+.idea
+.vscode
+logs
+cache
+.DS_Store
+*.log
+
