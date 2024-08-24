@@ -1,6 +1,6 @@
-package lesson47_guess_answer
+package algo047_guess_answer
 
-func minBag(apple int) int {
+func MinBag(apple int) int {
 	bag8 := apple / 8
 	rest := apple - bag8*8
 	for bag8 >= 0 {
@@ -14,8 +14,7 @@ func minBag(apple int) int {
 	return -1
 }
 
-// Time: O(1)
-func minBagAwesome(apple int) int {
+func MinBagAwesome(apple int) int {
 	if apple&1 != 0 { // 奇数返回-1
 		return -1
 	}
