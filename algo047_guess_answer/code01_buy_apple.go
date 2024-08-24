@@ -1,19 +1,5 @@
 package algo047_guess_answer
 
-func MinBag(apple int) int {
-	bag8 := apple / 8
-	rest := apple - bag8*8
-	for bag8 >= 0 {
-		if rest%6 == 0 {
-			return bag8 + rest/6
-		} else {
-			bag8--
-			rest += 8
-		}
-	}
-	return -1
-}
-
 func MinBagAwesome(apple int) int {
 	if apple&1 != 0 { // 奇数返回-1
 		return -1
@@ -28,4 +14,18 @@ func MinBagAwesome(apple int) int {
 	default:
 		return (apple-18)/8 + 3
 	}
+}
+
+func MinBag(apple int) int {
+	bag8 := apple / 8
+	rest := apple - bag8*8
+	for bag8 >= 0 {
+		if rest%6 == 0 {
+			return bag8 + rest/6
+		} else {
+			bag8--
+			rest += 8
+		}
+	}
+	return -1
 }
