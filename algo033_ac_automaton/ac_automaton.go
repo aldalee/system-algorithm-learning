@@ -1,4 +1,4 @@
-package ac_automaton
+package algo033_ac_automaton
 
 import "github.com/emirpasic/gods/v2/queues/linkedlistqueue"
 
